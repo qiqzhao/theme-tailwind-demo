@@ -4,13 +4,13 @@ export interface Theme {
 }
 
 const themes: Record<string, Theme> = {
-  example1: {
-    background: "bg-blue-500",
-    textColor: "text-white",
+  light: {
+    background: 'bg-gray-100',
+    textColor: 'text-black',
   },
-  example2: {
-    background: "bg-green-500",
-    textColor: "text-black",
+  dark: {
+    background: 'bg-gray-800',
+    textColor: 'text-white',
   },
 };
 
