@@ -15,9 +15,18 @@ const ThemedComponent: React.FC = () => {
         </button>
       </div>
       <div
-        className={`${theme.background} ${theme.textColor} flex flex-grow items-center justify-center`}
+        className={`${theme.background} ${theme.textColor} flex flex-col flex-grow items-center justify-center`}
       >
         <h1 className="text-4xl">Hello World</h1>
+        <div>
+          <img
+            className="rounded-full object-cover w-12 h-12"
+            src={theme.avatar}
+            alt="avatar"
+          />
+        </div>
+
+        {theme.type === "dark" && <div>Only Show on Dark Mode</div>}
       </div>
     </div>
   );
