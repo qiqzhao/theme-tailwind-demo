@@ -20,8 +20,10 @@ const ThemedComponent: React.FC = () => {
         <h1 className="text-4xl">Hello World</h1>
         <div>
           <img
-            className="rounded-full object-cover w-12 h-12"
+            className="rounded-full object-cover"
             src={theme.avatar}
+            width="100"
+            height="100"
             alt="avatar"
           />
         </div>

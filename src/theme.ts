@@ -1,3 +1,6 @@
+import Light from './images/light-avatar.jpg'
+import Dark from './images/dark-avatar.png'
+
 export interface Theme {
   background: string;
   textColor: string;
@@ -10,13 +13,13 @@ const themes: Record<string, Theme> = {
     background: "bg-gray-100",
     textColor: "text-black",
     type: "light",
-    avatar: './public/images/light-avatar.jpg',
+    avatar: Light
   },
   dark: {
     background: "bg-gray-800",
     textColor: "text-white",
     type: "dark",
-    avatar: "./public/images/dark-avatar.png",
+    avatar: Dark
   },
 };
 
